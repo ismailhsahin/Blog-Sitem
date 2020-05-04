@@ -1,0 +1,120 @@
+html{
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+li{
+    list-style: none;
+}
+nav{
+    font-size: 3rem;
+}
+
+.foto{
+    
+    max-height:40rem;
+}
+
+/*footer-------------*/
+#alan{
+    width: 100%;
+    height: 25rem;
+    background-color: #2E4053;
+}
+.imza{
+    display: inline-block;
+    position: absolute;
+    width: 20rem;
+    height: 12rem;
+    font-size: 10rem;
+    margin-top: 6rem;
+    margin-left: 15rem;
+    font-family: 'El Messiri', sans-serif;
+    transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+    color: #9A7D0A;
+}
+.imza:hover{
+    
+    transform: translateY(1rem);
+    transform: translateX(1rem);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+.altsosyal {
+    display: inline-block;
+    padding-left: 45%;
+    
+}
+.fora li{
+    font-size: 5rem;
+    color: #9A7D0A;
+    transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+}
+.fora i:hover{
+    color: #DAB31A;
+    
+}
+.fora a:visited{
+    color: #9A7D0A;
+    text-decoration:none
+    
+}
+
+.iletisim{
+    
+    position: relative;
+    margin-right: 5rem;
+    margin-top: 5rem;
+    position:relative;
+    float: right;
+    color: #9A7D0A;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+.sizebig{
+    font-size: 4rem;
+}
+.sizesmall{
+    font-size: 2rem;
+}
+
+/*70px----footer-----*/
+
+@media screen and (max-width:800px)
+{
+    .imza{
+        
+        width: 10rem;
+        height: 6rem;
+        font-size: 5rem;
+        margin-top: 9rem;
+        margin-left: 2rem;
+    }
+    
+    
+    .altsosyal {
+        display: inline-block;
+        padding-left: 30%;
+
+        padding-top: 3rem;
+    }
+    .fora li{
+        font-size: 4rem;
+    }
+    
+    .iletisim{
+        margin-right: 1.3rem;
+        margin-top: 8rem;
+        
+    }
+
+    .sizebig{
+        font-size: 2rem;
+        }
+    .sizesmall{
+        font-size: 1.3rem;
+        }
+}

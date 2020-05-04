@@ -1,0 +1,9 @@
+body {
+    background-image: url('../images/beyaz1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p {
+    font-weight:bold; 
+}
