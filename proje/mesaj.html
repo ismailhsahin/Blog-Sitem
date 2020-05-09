@@ -1,0 +1,103 @@
+<html>
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
+    
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    
+	<link rel="stylesheet" type="text/css" href="css/mesaj.css">
+
+	<meta name="viewport" content="width=device-width,initial-scal1">
+
+	<title>Mesaj</title>
+	<script type="text/javascript">
+		function parseURLParams(url) {
+			var queryStart = url.indexOf("?") + 1,
+				queryEnd = url.indexOf("#") + 1 || url.length + 1,
+				query = url.slice(queryStart, queryEnd - 1),
+				pairs = query.replace(/\+/g, " ").split("&"),
+				parms = {}, i, n, v, nv;
+
+			if (query === url || query === "") return;
+
+			for (i = 0; i < pairs.length; i++) {
+				nv = pairs[i].split("=", 2);
+				n = decodeURIComponent(nv[0]);
+				v = decodeURIComponent(nv[1]);
+
+				if (!parms.hasOwnProperty(n)) parms[n] = [];
+				parms[n].push(nv.length === 2 ? v : null);
+			}
+			return parms;
+		}
+		$("document").ready(function () {
+			var pathname = window.location.href
+			var veriler = parseURLParams(pathname)
+			console.log(veriler)
+
+			document.getElementById("ad").innerHTML = veriler.ad;
+			document.getElementById("soyad").innerHTML = veriler.soyad;
+			document.getElementById("email").innerHTML = veriler.email;
+			document.getElementById("cinsiyet").innerHTML = veriler.cinsiyet;
+			document.getElementById("mesaj").innerHTML = veriler.mesaj;
+			document.getElementById("sehir").innerHTML = veriler.sehir;
+		});
+	</script>
+
+</head>
+
+<body onLoad="KodUret()">
+
+	<body>
+
+		<div class="container mt-4">
+
+			<table class="table">
+				<thead>
+					<tr>
+						<th scope="col">ADINIZ</th>
+						<th scope="col">SOYADINIZ:</th>
+						<th scope="col">E-MAİL:</th>
+						<th scope="col">CİNSİYET</th>
+						<th scope="col">ŞEHİR</th>
+						<th scope="col">MESAJ</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<p id="ad"></p>
+						</td>
+
+						<td>
+							<p id="soyad"></p>
+						</td>
+
+						<td>
+							<p id="email"></p>
+						</td>
+
+						<td>
+							<p id="cinsiyet"></p>
+						</td>
+
+						<td>
+							<p id="sehir"></p>
+						</td>
+						
+						<td>
+							<p id="mesaj"></p>
+						</td>
+					</tr>
+
+				</tbody>
+			</table>
+
+		</div>
+	</body>
+
+</html>

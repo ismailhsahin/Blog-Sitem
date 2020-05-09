@@ -1,0 +1,13 @@
+body {
+    background-image: url('../images/beyaz1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+table {
+    border-collapse: collapse;
+  }
+  
+  table, td, th {
+    border: 1px solid black;
+  }
