@@ -30,22 +30,22 @@
     <div class="collapse navbar-collapse " id="navbarNav">
         <ul class="navbar-nav container h2">
           <li class="nav-item ">
-            <a class="nav-link" href="#">ANASAYFA <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">ANASAYFA <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">İSTANBUL</a>
+            <a class="nav-link" href="istanbul.html">İSTANBUL</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">MİRASIMIZ</a>
+            <a class="nav-link" href="Mirasımız.html">MİRASIMIZ</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">CV</a>
+            <a class="nav-link" href="Özgeçmiş.html">CV</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">İLETİŞİM</a>
+            <a class="nav-link" href="iletişim.html">İLETİŞİM</a>
         </li>
         <li class="nav-item active">
-            <a class="nav-link" href="#">LOGİN</a>
+            <a class="nav-link" href="login.php">LOGİN</a>
         </li>
 
     </ul>
